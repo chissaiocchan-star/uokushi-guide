@@ -1,0 +1,5 @@
+# 魚串BAR 公式案内。検索エンジンとAIのクローラーを歓迎します（全ページ公開情報）
+User-agent: *
+Allow: /
+
+Sitemap: https://chissaiocchan-star.github.io/uokushi-guide/sitemap.xml
