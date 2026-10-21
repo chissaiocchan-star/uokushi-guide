@@ -19,6 +19,10 @@ dl{margin:0}dt{font-weight:700;margin-top:10px}dd{margin:0 0 4px}
 details{border-bottom:1px solid var(--line);padding:10px 0}
 summary{cursor:pointer;font-weight:700}
 a{color:var(--accent)}
+label{display:block;margin:10px 0;font-weight:700}
+input,select,textarea{display:block;width:100%;margin-top:4px;padding:10px;font:inherit;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)}
+button{padding:12px 20px;font:inherit;font-weight:700;background:var(--accent);color:#fff;border:0;border-radius:6px;cursor:pointer}
+button:disabled{opacity:.5}
 footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 </style>
 <script type="application/ld+json">
@@ -70,6 +74,32 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 </ul>
 <p>掲載のコースに当てはまらないご希望も承ります。ご予算とご希望の内容を添えて、お電話ください。折り返しのご連絡は、090-6530-7591 より下高がいたします。</p>
 
+<h2 id="reserve">予約リクエスト（登録不要・無料）</h2>
+<p>ご希望をお知らせください。<strong>これは予約の確定ではありません。</strong>店主が確認して、お電話またはSMSで折り返します。日曜・祝日・年末年始（12/31〜1/5）は定休日です。当日のご予約や急ぎの場合は、お電話（<a href="tel:+819065307591">090-6530-7591</a>）でお願いします。</p>
+<form id="rf" class="card">
+<label>ご希望の日にち<input type="date" name="date" required></label>
+<label>時間<select name="time" required><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option><option>22:00</option></select></label>
+<label>人数（名）<input type="number" name="people" min="1" max="30" required inputmode="numeric"></label>
+<label>コース<select name="course" required><option>ぶりしゃぶコース 7,150円</option><option>贅沢逸品コース 6,600円</option><option>高級魚をいれたしゃぶしゃぶコース 6,600円</option><option>鯛出汁の出汁しゃぶプラン 6,050円</option><option>ぶりのせいろ蒸しを入れたコース 5,500円</option><option>焼き串、逸品を味わうコース 4,950円</option><option>忘年会・宴会のご予算・内容フレキシブルコース（ご相談）</option><option>席のみ（コースなし）</option></select></label>
+<label>お名前<input name="name" required maxlength="40" autocomplete="name"></label>
+<label>お電話番号<input type="tel" name="phone" required autocomplete="tel" placeholder="09012345678"></label>
+<label>ご要望（任意）<textarea name="note" maxlength="300" rows="3"></textarea></label>
+<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<button type="submit">この内容で送る</button>
+<p id="rmsg" role="status"></p>
+</form>
+<script>
+(function(){
+var f=document.getElementById("rf"),m=document.getElementById("rmsg"),U="https://script.google.com/macros/s/AKfycbzwOrmQYyvTBEWDx_lvohvKEbrTwrjUKESbIUOj2nh_6VrBckz63sAJl-sNwAo5pfQ_/exec";
+var d=new Date();d.setDate(d.getDate()+1);f.date.min=d.toISOString().slice(0,10);
+f.addEventListener("submit",function(e){e.preventDefault();var b=f.querySelector("button");b.disabled=true;m.textContent="送信中…";
+var o={web_reserve:1};new FormData(f).forEach(function(v,k){o[k]=v});
+fetch(U,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(o)}).then(function(r){return r.json()}).then(function(j){
+if(j.ok){m.textContent="リクエストを受け付けました。店主が確認して、お電話またはSMSでご連絡します。まだ確定ではありません。";f.reset()}else{m.textContent=j.error;b.disabled=false}
+}).catch(function(){m.textContent="送信できませんでした。お手数ですが、お電話（090-6530-7591）でお願いします。";b.disabled=false})});
+})();
+</script>
+
 <h2>よくあるご質問</h2>
 <details><summary>喫煙できますか？</summary><p>はい。全席喫煙可です。禁煙席はありません。20歳未満の方はご入店いただけません。</p></details>
 <details><summary>一人でも入れますか？</summary><p>はい。カウンター7席があり、お一人様歓迎です。魚串は1本から注文できます。</p></details>
@@ -79,6 +109,7 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 
 <h2>予約・掲載ページ</h2>
 <ul>
+<li><a href="#reserve">予約リクエストフォーム（登録不要）</a></li>
 <li><a href="https://sakanakushi-bal.foodre.jp/">公式予約ページ（foodre）</a></li>
 <li><a href="https://tabelog.com/osaka/A2701/A270202/27087494/">食べログ</a></li>
 <li><a href="https://www.instagram.com/sakanakushibar.uokushi/">Instagram</a></li>
