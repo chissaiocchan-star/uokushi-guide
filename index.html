@@ -93,7 +93,7 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 var f=document.getElementById("rf"),m=document.getElementById("rmsg"),U="https://script.google.com/macros/s/AKfycbzwOrmQYyvTBEWDx_lvohvKEbrTwrjUKESbIUOj2nh_6VrBckz63sAJl-sNwAo5pfQ_/exec";
 var d=new Date();d.setDate(d.getDate()+1);f.date.min=d.toISOString().slice(0,10);
 f.addEventListener("submit",function(e){e.preventDefault();var b=f.querySelector("button");b.disabled=true;m.textContent="送信中…";
-var o={web_reserve:1};new FormData(f).forEach(function(v,k){o[k]=v});
+var o={web_reserve:1,src:new URLSearchParams(location.search).get("src")||""};new FormData(f).forEach(function(v,k){o[k]=v});
 fetch(U,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(o)}).then(function(r){return r.json()}).then(function(j){
 if(j.ok){m.textContent="リクエストを受け付けました。店主が確認して、お電話またはSMSでご連絡します。まだ確定ではありません。";f.reset()}else{m.textContent=j.error;b.disabled=false}
 }).catch(function(){m.textContent="送信できませんでした。お手数ですが、お電話（090-6530-7591）でお願いします。";b.disabled=false})});
