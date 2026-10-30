@@ -65,13 +65,14 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 
 <h2>コース（90分飲み放題付き・税込）</h2>
 <ul>
-<li>焼き串、逸品を味わう　4,950円</li>
-<li>ぶりのせいろ蒸しを入れたコース　5,500円</li>
-<li>鯛出汁の出汁しゃぶプラン　6,050円</li>
-<li>贅沢逸品コース　6,600円</li>
-<li>高級魚をいれたしゃぶしゃぶコース　6,600円</li>
-<li>ぶりしゃぶコース　7,150円</li>
+<li><strong>焼き串、逸品を味わう　4,950円</strong>（7品）お造り・魚串・揚げ物・逸品、〆に鯛出汁の五島うどん</li>
+<li><strong>ぶりのせいろ蒸しを入れたコース　5,500円</strong>（9品）付き出し・お造り4種・名物の魚串5種盛り・揚げ物・ぶりのせいろ蒸し、〆に鯛出汁の五島うどん</li>
+<li><strong>鯛出汁の出汁しゃぶプラン　6,050円</strong>（7品）鯛の骨からとった出汁でしゃぶしゃぶ、〆に雑炊または鯛出汁の五島うどん</li>
+<li><strong>贅沢逸品コース　6,600円</strong>お造り5種盛り・焼き串5種盛り・揚げ物と逸品数種類、〆に鯛出汁の五島うどん</li>
+<li><strong>高級魚をいれたしゃぶしゃぶコース　6,600円</strong>（7品）お魚をグレードアップしたしゃぶしゃぶ、〆に雑炊または鯛出汁の五島うどん</li>
+<li><strong>ぶりしゃぶコース　7,150円</strong>（7品）ぶりしゃぶ。日本酒・地酒も飲み放題に含まれます</li>
 </ul>
+<p>内容は季節や仕入れにより変わることがあります。単品のメニューや写真は、<a href="https://tabelog.com/osaka/A2701/A270202/27087494/">食べログのお店のページ</a>でもご覧いただけます。</p>
 <p>掲載のコースに当てはまらないご希望も承ります。ご予算とご希望の内容を添えて、お電話ください。折り返しのご連絡は、090-6530-7591 より下高がいたします。</p>
 
 <h2 id="reserve">予約リクエスト（登録不要・無料）</h2>
@@ -82,6 +83,7 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 <label>時間<select name="time" required><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option><option>22:00</option></select></label>
 <label>人数（名）<input type="number" name="people" min="1" max="30" required inputmode="numeric"></label>
 <label>コース<select name="course" required><option>ぶりしゃぶコース 7,150円（税込）</option><option>贅沢逸品コース 6,600円（税込）</option><option>高級魚をいれたしゃぶしゃぶコース 6,600円（税込）</option><option>鯛出汁の出汁しゃぶプラン 6,050円（税込）</option><option>ぶりのせいろ蒸しを入れたコース 5,500円（税込）</option><option>焼き串、逸品を味わうコース 4,950円（税込）</option><option>忘年会・宴会のご予算・内容フレキシブルコース（ご相談）</option><option>席のみ（コースなし）</option></select></label>
+<p id="cdesc" class="note" aria-live="polite"></p>
 <label>お名前（会社の場合は会社名も）<input name="name" required maxlength="40" autocomplete="name"></label>
 <label>お電話番号<input type="tel" name="phone" required autocomplete="tel" placeholder="09012345678"></label>
 <label>ご要望（任意）<textarea name="note" maxlength="300" rows="3"></textarea></label>
@@ -93,6 +95,9 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 (function(){
 var f=document.getElementById("rf"),m=document.getElementById("rmsg"),U="https://script.google.com/macros/s/AKfycbzwOrmQYyvTBEWDx_lvohvKEbrTwrjUKESbIUOj2nh_6VrBckz63sAJl-sNwAo5pfQ_/exec";
 var d=new Date();d.setDate(d.getDate()+1);f.date.min=d.toISOString().slice(0,10);
+var C={"ぶりしゃぶコース":"7品／ぶりしゃぶ。日本酒・地酒も飲み放題に含まれます。","贅沢逸品コース":"お造り5種盛り・焼き串5種盛り・揚げ物と逸品数種類。〆に鯛出汁の五島うどん。","高級魚をいれたしゃぶしゃぶコース":"7品／お魚をグレードアップしたしゃぶしゃぶ。〆に雑炊または鯛出汁の五島うどん。","鯛出汁の出汁しゃぶプラン":"7品／鯛の骨からとった出汁でしゃぶしゃぶ。〆に雑炊または鯛出汁の五島うどん。","ぶりのせいろ蒸しを入れたコース":"9品／付き出し・お造り4種・魚串5種盛り・揚げ物・ぶりのせいろ蒸し。〆に鯛出汁の五島うどん。","焼き串、逸品を味わうコース":"7品／お造り・魚串・揚げ物・逸品。〆に鯛出汁の五島うどん。（季節により変わります）","忘年会・宴会":"ご予算・人数・入れたいお料理に合わせて、ご相談ください。","席のみ":"コースなしで、お席だけのご予約です。お料理は単品でご注文いただけます。"};
+function sd(){var v=f.course.value,t="";for(var k in C){if(v.indexOf(k)===0){t=C[k]}}document.getElementById("cdesc").textContent=t?"内容: "+t:""}
+f.course.addEventListener("change",sd);sd();
 f.addEventListener("submit",function(e){e.preventDefault();var b=f.querySelector("button");b.disabled=true;m.textContent="送信中…";
 var o={web_reserve:1,src:new URLSearchParams(location.search).get("src")||""};new FormData(f).forEach(function(v,k){o[k]=v});
 fetch(U,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify(o)}).then(function(r){return r.json()}).then(function(j){
