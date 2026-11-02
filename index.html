@@ -13,6 +13,8 @@ body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.8 "Hiragino Sans"
 main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
 h1{font-size:1.5rem;line-height:1.4;margin:0 0 8px}
 .tel{display:flex;gap:10px;margin:14px 0 20px}.tel a{flex:1;text-align:center;padding:12px 8px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}.tel .call{background:var(--accent);color:#fff}.tel .form{color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 16px}.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.9rem}
+.steps{padding-left:1.4em}.steps li{margin:6px 0}
 h2{font-size:1.15rem;margin:36px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
 .lead{color:var(--sub);margin:0 0 20px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:16px 0}
@@ -49,6 +51,7 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 <h1>なんば・心斎橋で全席喫煙可の海鮮居酒屋<br>魚串BAR 公式案内</h1>
 <p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a></p>
 <p class="lead">このページは、魚串BAR（お店）が作った公式の案内です。ほかのお店の情報は載せていません。</p>
+<ul class="chips"><li>お一人様歓迎</li><li>魚串は1本から</li><li>全席喫煙可</li><li>18:00〜24:00（金・土は翌1:00）</li><li>90分飲み放題付きコース 4,950円〜</li><li>9名様から貸切可</li></ul>
 
 <div class="card">
 <dl>
@@ -76,6 +79,16 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 </ul>
 <p>内容は季節や仕入れにより変わることがあります。単品のメニューや写真は、<a href="https://tabelog.com/osaka/A2701/A270202/27087494/">食べログのお店のページ</a>でもご覧いただけます。</p>
 <p>掲載のコースに当てはまらないご希望も承ります。ご予算とご希望の内容を添えて、お電話ください。折り返しのご連絡は、090-6530-7591 より下高がいたします。</p>
+
+<h2>ご利用の流れ</h2>
+<ol class="steps">
+<li><strong>ご予約</strong>　お電話、または下の予約リクエスト（明日以降の日にち）から。当日はお電話でお願いします。</li>
+<li><strong>折り返しのご連絡</strong>　店主が確認して、お電話またはSMSでご連絡します。お席の確定は、このご連絡のあとです。</li>
+<li><strong>ご来店</strong>　なんば駅 徒歩4分／心斎橋駅 徒歩6分。18:00から営業しています。</li>
+<li><strong>お楽しみください</strong>　90分飲み放題付きのコース、または魚串を1本から単品でどうぞ。</li>
+</ol>
+<p>忘年会・ご宴会は、人数・日程・ご予算をお知らせください。折り返しお見積りします。</p>
+<p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a></p>
 
 <h2 id="reserve">予約リクエスト（登録不要・無料）</h2>
 <p>ご希望をお知らせください。<strong>これは予約の確定ではありません。</strong>店主が確認して、お電話またはSMSで折り返します。日曜・祝日・年末年始（12/31〜1/5）は定休日です。当日のご予約や急ぎの場合は、お電話（<a href="tel:+819065307591">090-6530-7591</a>）でお願いします。</p>
@@ -112,8 +125,13 @@ if(j.ok){m.textContent="リクエストを受け付けました。店主が確�
 <details><summary>喫煙できますか？</summary><p>はい。全席喫煙可です。禁煙席はありません。20歳未満の方はご入店いただけません。</p></details>
 <details><summary>一人でも入れますか？</summary><p>はい。カウンター7席があり、お一人様歓迎です。魚串は1本から注文できます。</p></details>
 <details><summary>貸切はできますか？</summary><p>9名様から貸切できます。</p></details>
+<details><summary>飲み放題は何分ですか？</summary><p>コースに、90分の飲み放題が付いています。ぶりしゃぶコースは、日本酒・地酒も飲み放題に含まれます。</p></details>
+<details><summary>予約はいつまでにすればいいですか？</summary><p>ネットでのご予約は、明日以降の日にちから承ります。当日のご予約は、お電話（090-6530-7591）でお願いします。</p></details>
+<details><summary>忘年会のご予算はどのくらいですか？</summary><p>90分飲み放題付きのコースが、4,950円〜7,150円（税込）です。ご予算・人数に合わせたご相談も承ります。</p></details>
 <details><summary>テイクアウトはできますか？</summary><p>お受けしていません。</p></details>
 <details><summary>駐車場はありますか？</summary><p>ありません。近隣のコインパーキングをご利用ください。</p></details>
+
+<p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a></p>
 
 <h2>予約・掲載ページ</h2>
 <ul>
