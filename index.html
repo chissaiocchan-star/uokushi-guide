@@ -12,7 +12,7 @@
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.8 "Hiragino Sans","Yu Gothic",system-ui,sans-serif}
 main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
 h1{font-size:1.5rem;line-height:1.4;margin:0 0 8px}
-.tel{display:flex;gap:10px;margin:14px 0 20px}.tel a{flex:1;text-align:center;padding:12px 8px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}.tel .call{background:var(--accent);color:#fff}.tel .form{color:var(--accent)}
+.tel{display:flex;gap:10px;margin:14px 0 20px}.tel a{flex:1;text-align:center;padding:12px 8px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}.tel .call{background:var(--accent);color:#fff}.tel{flex-wrap:wrap}.tel a{min-width:30%}.tel .form,.tel .retty{color:var(--accent)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 16px}.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.9rem}
 .steps{padding-left:1.4em}.steps li{margin:6px 0}
 h2{font-size:1.15rem;margin:36px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
@@ -49,7 +49,7 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 <body>
 <main>
 <h1>なんば・心斎橋で全席喫煙可の海鮮居酒屋<br>魚串BAR 公式案内</h1>
-<p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a></p>
+<p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a><a class="retty" href="https://retty.me/area/PRE27/ARE94/SUB9401/100001360615/" rel="noopener">Rettyで予約（写真つき）</a></p>
 <p class="lead">このページは、魚串BAR（お店）が作った公式の案内です。ほかのお店の情報は載せていません。</p>
 <ul class="chips"><li>お一人様歓迎</li><li>魚串は1本から</li><li>全席喫煙可</li><li>18:00〜24:00（金・土は翌1:00）</li><li>90分飲み放題付きコース 4,950円〜</li><li>9名様から貸切可</li></ul>
 
@@ -88,9 +88,10 @@ footer{margin-top:40px;color:var(--sub);font-size:.85rem}
 <li><strong>お楽しみください</strong>　90分飲み放題付きのコース、または魚串を1本から単品でどうぞ。</li>
 </ol>
 <p>忘年会・ご宴会は、人数・日程・ご予算をお知らせください。折り返しお見積りします。</p>
-<p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a></p>
+<p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a><a class="retty" href="https://retty.me/area/PRE27/ARE94/SUB9401/100001360615/" rel="noopener">Rettyで予約（写真つき）</a></p>
 
 <h2 id="reserve">予約リクエスト（登録不要・無料）</h2>
+<p>お店の写真やコースを見ながら予約したい方は、<a href="https://retty.me/area/PRE27/ARE94/SUB9401/100001360615/" rel="noopener">Retty（グルメサイト）</a>からも、ご予約いただけます。登録不要で手軽なのは、下の予約リクエストです。</p>
 <p>ご希望をお知らせください。<strong>これは予約の確定ではありません。</strong>店主が確認して、お電話またはSMSで折り返します。日曜・祝日・年末年始（12/31〜1/5）は定休日です。当日のご予約や急ぎの場合は、お電話（<a href="tel:+819065307591">090-6530-7591</a>）でお願いします。</p>
 <form id="rf" class="card">
 <p><strong>ネットでのご予約は、明日以降の日にちから承ります。</strong>当日は、私が一人で調理と接客をしているため、フォームのご連絡に気づくのが遅れ、お席をお約束できないことがあります。当日のご予約は、その場で確実にお席をお伝えできるお電話（<a href="tel:+819065307591">090-6530-7591</a>）でお願いします。</p>
@@ -126,12 +127,13 @@ if(j.ok){m.textContent="リクエストを受け付けました。店主が確�
 <details><summary>一人でも入れますか？</summary><p>はい。カウンター7席があり、お一人様歓迎です。魚串は1本から注文できます。</p></details>
 <details><summary>貸切はできますか？</summary><p>9名様から貸切できます。</p></details>
 <details><summary>飲み放題は何分ですか？</summary><p>コースに、90分の飲み放題が付いています。ぶりしゃぶコースは、日本酒・地酒も飲み放題に含まれます。</p></details>
+<details><summary>ネットで予約するには、どうすればいいですか？</summary><p>このページの予約リクエスト（登録不要・無料）か、<a href="https://retty.me/area/PRE27/ARE94/SUB9401/100001360615/" rel="noopener">Retty</a>からご予約いただけます。お電話（090-6530-7591）でも承ります。</p></details>
 <details><summary>予約はいつまでにすればいいですか？</summary><p>ネットでのご予約は、明日以降の日にちから承ります。当日のご予約は、お電話（090-6530-7591）でお願いします。</p></details>
 <details><summary>忘年会のご予算はどのくらいですか？</summary><p>90分飲み放題付きのコースが、4,950円〜7,150円（税込）です。ご予算・人数に合わせたご相談も承ります。</p></details>
 <details><summary>テイクアウトはできますか？</summary><p>お受けしていません。</p></details>
 <details><summary>駐車場はありますか？</summary><p>ありません。近隣のコインパーキングをご利用ください。</p></details>
 
-<p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a></p>
+<p class="tel"><a class="call" href="tel:+819065307591">📞 電話で予約 090-6530-7591</a><a class="form" href="#reserve">ネットで予約リクエスト</a><a class="retty" href="https://retty.me/area/PRE27/ARE94/SUB9401/100001360615/" rel="noopener">Rettyで予約（写真つき）</a></p>
 
 <h2>予約・掲載ページ</h2>
 <ul>
