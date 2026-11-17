@@ -11,7 +11,7 @@ function page({file,title,desc,h1,lead,chips,body,qs,imgs}){
   const Q=faq(qs);
   const ld={'@context':'https://schema.org','@type':'FAQPage',mainEntity:Q.map(q=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:faqAll[q]}}))};
   const faqHtml=Q.map(q=>`<details><summary>${q}</summary><p>${faqAll[q]}</p></details>`).join('\n');
-  const imgHtml=(imgs||[]).map(i=>`<img src="${i.src}" alt="${i.alt}" width="450" height="600" loading="lazy" style="max-width:100%;height:auto;border-radius:8px">`).join('');
+  const imgHtml=(imgs||[]).map(i=>`<img src="${i.src}" alt="${i.alt}" width="${i.w||450}" height="${i.h||600}" loading="lazy" style="max-width:100%;height:auto;border-radius:8px">`).join('');
   const html=`<!doctype html>
 <html lang="ja">
 <head>
@@ -70,7 +70,7 @@ page({file:'hitori.html',
 </dl></div>
 <p class="vo">席だけのご予約も、承ります（ネットは明日以降の日にちから。当日はお電話で）。</p>`,
  qs:['一人でも入れますか？','2軒目や、軽く一杯だけでも大丈夫ですか？','喫煙できますか？','予約はいつまでにすればいいですか？','日本酒はありますか？','テイクアウトはできますか？'],
- imgs:[]});
+ imgs:[{src:'img/sashimi1.jpg',alt:'お造り盛り合わせ（日によって魚は変わります）',w:1200,h:900}]});
 page({file:'niigata.html',
  title:'新潟・糸魚川直送の魚と鯛出汁｜なんば・心斎橋の海鮮居酒屋｜魚串BAR',
  desc:'なんば・心斎橋の魚串BARは、新潟・糸魚川から直送の鮮魚を、魚串（1本から）と鯛出汁で。お造り、鯛出汁しゃぶ、〆の鯛出汁ラーメン。日本酒・焼酎も。全席喫煙可。',
@@ -88,4 +88,4 @@ page({file:'niigata.html',
 <h2>新潟県の公式ページに載っています</h2>
 <p>新潟県大阪事務所の「<a href="https://www.pref.niigata.lg.jp/sec/osaka/kansaiyukari.html" rel="noopener">関西にある新潟ゆかりのお店</a>」（新潟県産品が味わえる飲食店）に掲載されています。</p>`,
  qs:['どこの魚を使っていますか？','鯛を使った料理はありますか？','日本酒はありますか？','一人でも入れますか？'],
- imgs:[{src:'img/cover_oturi.jpg',alt:'お造り盛り合わせ'}]});
+ imgs:[{src:'img/sashimi1.jpg',alt:'お造り盛り合わせ（日によって魚は変わります）',w:1200,h:900}]});
