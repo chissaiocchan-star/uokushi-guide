@@ -40,6 +40,7 @@ const page=`<!doctype html>
 
 <h2>コース（すべて90分飲み放題付き・税込）</h2>
 ${course}
+<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:flex-start"><figure style="margin:0;flex:1 1 240px;text-align:center"><img src="img/buri1.jpg" alt="ぶりしゃぶのお刺身と鍋" width="800" height="1067" loading="lazy" style="max-width:100%;height:auto;border-radius:8px"><figcaption class="vo">ぶりしゃぶ。</figcaption></figure><figure style="margin:0;flex:1 1 240px;text-align:center"><img src="img/kinmedai1.jpg" alt="金目鯛のしゃぶしゃぶ用のお刺身" width="1000" height="750" loading="lazy" style="max-width:100%;height:auto;border-radius:8px"><figcaption class="vo">金目鯛のしゃぶしゃぶ（ある日の例です）。</figcaption></figure></div>
 <p class="vo">ご予算・内容のご相談も承ります。お電話（090-6530-7591）か、予約リクエストフォームからどうぞ。</p>
 
 <h2>日程と営業</h2>
