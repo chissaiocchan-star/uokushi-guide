@@ -68,6 +68,7 @@ page({file:'hitori.html',
 <dt>2軒目に</dt><dd>魚串1本とお酒1杯から、軽くご利用いただけます。鯛出汁茶碗蒸し、〆の鯛出汁ラーメンもあります。日本酒・焼酎も取りそろえています。</dd>
 <dt>お一人様で</dt><dd>カウンターは7席です。お一人様も歓迎です。全席喫煙可です。</dd>
 </dl></div>
+<figure style="margin:12px 0;text-align:center"><img src="img/skewers1.jpg" alt="魚串の盛り合わせ（写真は4人前）" width="900" height="1200" loading="lazy" style="max-width:70%;height:auto;border-radius:8px"><figcaption class="vo">魚串の盛り合わせ。写真は4人前です。魚串は1本から注文できます。</figcaption></figure>
 <p class="vo">席だけのご予約も、承ります（ネットは明日以降の日にちから。当日はお電話で）。</p>`,
  qs:['一人でも入れますか？','2軒目や、軽く一杯だけでも大丈夫ですか？','喫煙できますか？','予約はいつまでにすればいいですか？','日本酒はありますか？','テイクアウトはできますか？'],
  imgs:[{src:'img/sashimi1.jpg',alt:'お造り盛り合わせ（日によって魚は変わります）',w:1200,h:900}]});
@@ -79,6 +80,7 @@ page({file:'niigata.html',
  chips:['新潟・糸魚川から直送','魚串は1本から','鯛出汁しゃぶ','日本酒・焼酎','全席喫煙可'],
  body:`<h2>魚のこと</h2>
 <p>魚は、新潟・糸魚川から直送しています。届いた魚を、お造りや魚串などでお出しします。焼き串・揚げ串は1本から注文できるので、いろいろな魚を少しずつ楽しめます。</p>
+<figure style="margin:12px 0;text-align:center"><img src="img/skewers1.jpg" alt="魚串の盛り合わせ（写真は4人前）" width="900" height="1200" loading="lazy" style="max-width:70%;height:auto;border-radius:8px"><figcaption class="vo">魚串の盛り合わせ。写真は4人前です。魚串は1本から注文できます。</figcaption></figure>
 <h2>鯛出汁のこと</h2>
 <p>鯛の骨からとった鯛出汁を、しゃぶしゃぶ・茶碗蒸し・〆の鯛出汁ラーメンでどうぞ。</p>
 <h2>お酒</h2>
