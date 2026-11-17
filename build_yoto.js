@@ -82,9 +82,11 @@ page({file:'niigata.html',
  chips:['新潟・糸魚川から直送','魚串は1本から','鯛出汁しゃぶ','日本酒・焼酎','全席喫煙可'],
  body:`<h2>魚のこと</h2>
 <p>魚は、新潟・糸魚川から直送しています。届いた魚を、お造りや魚串などでお出しします。焼き串・揚げ串は1本から注文できるので、いろいろな魚を少しずつ楽しめます。</p>
+<figure style="margin:12px 0;text-align:center"><img src="img/fishbox1.jpg" alt="ある日の入荷の魚（日によって変わります）" width="800" height="1422" loading="lazy" style="max-width:55%;height:auto;border-radius:8px"><figcaption class="vo">ある日の入荷です。魚は日によって変わります。</figcaption></figure>
 <figure style="margin:12px 0;text-align:center"><img src="img/skewers1.jpg" alt="魚串の盛り合わせ（写真は4人前）" width="900" height="1200" loading="lazy" style="max-width:70%;height:auto;border-radius:8px"><figcaption class="vo">魚串の盛り合わせ。写真は4人前です。魚串は1本から注文できます。</figcaption></figure>
 <h2>鯛出汁のこと</h2>
 <p>鯛の骨からとった鯛出汁を、しゃぶしゃぶ・茶碗蒸し・〆の鯛出汁ラーメンでどうぞ。</p>
+<figure style="margin:12px 0;text-align:center"><img src="img/taishabu1.jpg" alt="鯛出汁しゃぶしゃぶの鯛の薄造りと鯛出汁" width="900" height="1056" loading="lazy" style="max-width:80%;height:auto;border-radius:8px"><figcaption class="vo">鯛出汁しゃぶしゃぶ。薄く切った鯛を、鯛出汁にくぐらせます。</figcaption></figure>
 <figure style="margin:12px 0;text-align:center"><img src="img/ramen2.jpg" alt="〆の鯛出汁ラーメン" width="900" height="1200" loading="lazy" style="max-width:62%;height:auto;border-radius:8px"><figcaption class="vo">〆の鯛出汁ラーメン。</figcaption></figure>
 <figure style="margin:12px 0;text-align:center"><img src="img/seiro1.jpg" alt="ぶりのせいろ蒸し" width="900" height="1200" loading="lazy" style="max-width:62%;height:auto;border-radius:8px"><figcaption class="vo">ぶりのせいろ蒸し（コースの一品です）。</figcaption></figure>
 <h2>お酒</h2>
