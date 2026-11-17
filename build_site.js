@@ -80,6 +80,8 @@ ${M.courses.map(c=>`- ${c.name}: ${fmt(c.price)}円 — ${c.content}`).join('\n'
 ## ページ
 - [公式の案内ページ（予約リクエストフォーム）](${s.url})
 - [忘年会・貸切のご案内](${s.url}bonenkai.html)
+- [一人飲み・2軒目のご案内](${s.url}hitori.html)
+- [新潟・糸魚川の魚と鯛出汁](${s.url}niigata.html)
 
 ## 掲載ページ
 - [食べログ](https://tabelog.com/osaka/A2701/A270202/27087494/)
@@ -89,5 +91,6 @@ ${M.courses.map(c=>`- ${c.name}: ${fmt(c.price)}円 — ${c.content}`).join('\n'
 `;
   fs.writeFileSync('llms.txt',llms);
   require('child_process').execSync('node build_bonenkai.js',{stdio:'inherit'});
+  require('child_process').execSync('node build_yoto.js',{stdio:'inherit'});
   console.log('apply 完了: index.html / llms.txt / bonenkai.html');
 }

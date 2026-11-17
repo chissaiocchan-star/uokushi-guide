@@ -21,6 +21,8 @@
 ## ページ
 - [公式の案内ページ（予約リクエストフォーム）](https://chissaiocchan-star.github.io/uokushi-guide/)
 - [忘年会・貸切のご案内](https://chissaiocchan-star.github.io/uokushi-guide/bonenkai.html)
+- [一人飲み・2軒目のご案内](https://chissaiocchan-star.github.io/uokushi-guide/hitori.html)
+- [新潟・糸魚川の魚と鯛出汁](https://chissaiocchan-star.github.io/uokushi-guide/niigata.html)
 
 ## 掲載ページ
 - [食べログ](https://tabelog.com/osaka/A2701/A270202/27087494/)
