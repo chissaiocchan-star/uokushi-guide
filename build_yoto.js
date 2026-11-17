@@ -85,7 +85,8 @@ page({file:'niigata.html',
 <figure style="margin:12px 0;text-align:center"><img src="img/skewers1.jpg" alt="魚串の盛り合わせ（写真は4人前）" width="900" height="1200" loading="lazy" style="max-width:70%;height:auto;border-radius:8px"><figcaption class="vo">魚串の盛り合わせ。写真は4人前です。魚串は1本から注文できます。</figcaption></figure>
 <h2>鯛出汁のこと</h2>
 <p>鯛の骨からとった鯛出汁を、しゃぶしゃぶ・茶碗蒸し・〆の鯛出汁ラーメンでどうぞ。</p>
-<figure style="margin:12px 0;text-align:center"><img src="img/ramen1.jpg" alt="〆の鯛出汁ラーメン" width="900" height="1200" loading="lazy" style="max-width:62%;height:auto;border-radius:8px"><figcaption class="vo">〆の鯛出汁ラーメン。</figcaption></figure>
+<figure style="margin:12px 0;text-align:center"><img src="img/ramen2.jpg" alt="〆の鯛出汁ラーメン" width="900" height="1200" loading="lazy" style="max-width:62%;height:auto;border-radius:8px"><figcaption class="vo">〆の鯛出汁ラーメン。</figcaption></figure>
+<figure style="margin:12px 0;text-align:center"><img src="img/seiro1.jpg" alt="ぶりのせいろ蒸し" width="900" height="1200" loading="lazy" style="max-width:62%;height:auto;border-radius:8px"><figcaption class="vo">ぶりのせいろ蒸し（コースの一品です）。</figcaption></figure>
 <h2>お酒</h2>
 <p>日本酒・焼酎も取りそろえています。すべてのコースの90分飲み放題に、日本酒（地酒）も含まれます。</p>
 <figure style="margin:12px 0;text-align:center"><img src="img/sake1.jpg" alt="ある日の日本酒のボトル（入荷により変わります）" width="1000" height="750" loading="lazy" style="max-width:100%;height:auto;border-radius:8px"><figcaption class="vo">ある日の日本酒。入荷により変わります。</figcaption></figure>
