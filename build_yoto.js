@@ -68,6 +68,7 @@ page({file:'hitori.html',
 <dt>2軒目に</dt><dd>魚串1本とお酒1杯から、軽くご利用いただけます。鯛出汁茶碗蒸し、〆の鯛出汁ラーメンもあります。日本酒・焼酎も取りそろえています。</dd>
 <dt>お一人様で</dt><dd>カウンターは7席です。お一人様も歓迎です。全席喫煙可です。</dd>
 </dl></div>
+<figure style="margin:12px 0;text-align:center"><img src="img/interior_counter.jpg" alt="カウンター席とテーブル席（お一人様も歓迎です）" width="984" height="984" loading="lazy" style="max-width:80%;height:auto;border-radius:8px"><figcaption class="vo">カウンターは7席です。奥にテーブル席があります。</figcaption></figure>
 <figure style="margin:12px 0;text-align:center"><img src="img/skewers1.jpg" alt="魚串の盛り合わせ（写真は4人前）" width="900" height="1200" loading="lazy" style="max-width:70%;height:auto;border-radius:8px"><figcaption class="vo">魚串の盛り合わせ。写真は4人前です。魚串は1本から注文できます。</figcaption></figure>
 <figure style="margin:12px 0;text-align:center"><img src="img/skewers2.jpg" alt="魚串の盛り合わせ（写真は2人前）" width="900" height="1200" loading="lazy" style="max-width:70%;height:auto;border-radius:8px"><figcaption class="vo">魚串の盛り合わせ。写真は2人前です。</figcaption></figure>
 <p class="vo">席だけのご予約も、承ります（ネットは明日以降の日にちから。当日はお電話で）。</p>`,
@@ -88,6 +89,7 @@ page({file:'niigata.html',
 <p>日本酒・焼酎も取りそろえています。すべてのコースの90分飲み放題に、日本酒（地酒）も含まれます。</p>
 <figure style="margin:12px 0;text-align:center"><img src="img/sake1.jpg" alt="ある日の日本酒のボトル（入荷により変わります）" width="1000" height="750" loading="lazy" style="max-width:100%;height:auto;border-radius:8px"><figcaption class="vo">ある日の日本酒。入荷により変わります。</figcaption></figure>
 <figure style="margin:12px 0;text-align:center"><img src="img/sake2.jpg" alt="日本酒のボトル（入荷により変わります）" width="750" height="1000" loading="lazy" style="max-width:62%;height:auto;border-radius:8px"><figcaption class="vo">銘柄は、入荷により変わります。</figcaption></figure>
+<figure style="margin:12px 0;text-align:center"><img src="img/sake3.jpg" alt="日本酒のボトル（入荷により変わります）" width="1000" height="750" loading="lazy" style="max-width:100%;height:auto;border-radius:8px"><figcaption class="vo">入荷により変わります。</figcaption></figure>
 <h2>新潟県の公式ページに載っています</h2>
 <p>新潟県大阪事務所の「<a href="https://www.pref.niigata.lg.jp/sec/osaka/kansaiyukari.html" rel="noopener">関西にある新潟ゆかりのお店</a>」（新潟県産品が味わえる飲食店）に掲載されています。</p>`,
  qs:['どこの魚を使っていますか？','鯛を使った料理はありますか？','日本酒はありますか？','一人でも入れますか？'],
